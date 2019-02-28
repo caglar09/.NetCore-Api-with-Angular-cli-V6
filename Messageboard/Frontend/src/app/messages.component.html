@@ -1,0 +1,25 @@
+
+<div class="col-sm-10">
+        <div *ngFor="let mess of webservice.messagesStore">
+                <mat-card class="card">
+                    <mat-card-title class="title">
+                        <div class="row">
+                                <div class="col-sm-9">Send: <b style="cursor: pointer;" [routerLink]="['/messages',mess.userID]">{{mess.messageID}}</b></div> 
+                                <div class="col-sm-3"> Datetime: <i class="datetime">{{mess.messageTime | date:'dd-MM-yyyy h:mm:ss'}}</i></div>
+                        </div>
+                    </mat-card-title> 
+                    <mat-card-content>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                    Message: <b>{{mess.message}}</b>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#" class="btn  btn-xs text-danger" (click)="deleteMessage(mess.messageID)">
+                                        <i class="fa fa-remove" aria-hidden="true"> </i>
+                                </a>
+                            </div>
+                        </div>
+                    </mat-card-content> 
+                </mat-card>
+            </div>
+</div>

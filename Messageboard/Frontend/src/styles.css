@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC');
+body{
+    background: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:#1a1a9b;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 40px;
+}
+.card{
+    margin: 8px;
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0; 
+}

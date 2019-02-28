@@ -1,0 +1,11 @@
+.datetime{
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+}
+mat-card-title{
+    font-size: 14px;
+}
+
+.card{
+    width: 100%;
+}

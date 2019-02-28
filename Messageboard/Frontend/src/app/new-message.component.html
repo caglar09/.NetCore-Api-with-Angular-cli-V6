@@ -1,0 +1,18 @@
+<mat-card class="card">
+  <mat-card-content>
+    <div class="row">
+
+        <div class="col-md-12">
+            <textarea matInput   placeholder="Message" [(ngModel)]="message.message" class="form-control"></textarea>
+        </div>
+       
+
+        <div class="col-md-12 text-center">
+            <mat-card-actions>
+                <button (click)="post()" color="warn" mat-button>POST</button>
+            </mat-card-actions>
+        </div>
+    </div>
+    
+  </mat-card-content>
+</mat-card>
